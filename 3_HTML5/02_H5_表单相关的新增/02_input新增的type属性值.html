@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>02_input新增的type属性值</title>
+</head>
+<body>
+    <form action="" novalidate>
+<!--        type是w3c预定义的，name可自定义-->
+        邮箱：<input type="email" required name="email">
+
+        <!-- url：<input type="url" required name="url"> -->
+
+<!--        step是每次递增的幅度 max输入之后，输入框的宽度可能变动，浏览器会估计最大展示的位数来显示-->
+        <!-- 数值：<input type="number" required name="number" step="2" max="80" min="20"> -->
+
+        <!-- 搜索：<input type="search" required name="keyword"> -->
+
+<!--        在移动端有用，点击输入框之后会展示出来一个数字键盘-->
+        <!-- 电话：<input type="tel" required name="phone"> -->
+
+<!--        范围选择器 value是默认值 实际开发一般不会用原生的这个，而是结合js，因为原生的不会实时展示选择的结果-->
+        <!-- 光照强度：<input type="range" name="range" max="80" min="20" value="22"> -->
+
+<!--        颜色选择器-->
+        <!-- 颜色：<input type="color" name="color"> -->
+
+        <!-- 日期：<input type="date" required name="date"> -->
+
+        <!-- 月份：<input type="month" required name="month"> -->
+
+        <!-- 周：<input type="week" required name="week"> -->
+
+        <!-- 时间：<input type="time" required name="time"> -->
+
+        <!-- 日期+时间：<input type="datetime-local" required name="time2"> -->
+
+        <br>
+        <button>提交</button>
+    </form>
+</body>
+</html>

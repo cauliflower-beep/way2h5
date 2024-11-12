@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>01_box-sizing</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: deepskyblue;
+            padding: 5px;
+            border: 5px solid black;
+            margin-bottom: 20px;
+            /*默认是内容区*/
+            box-sizing: content-box;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            padding: 5px;
+            border: 5px solid black;
+            /*盒子总宽高*/
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

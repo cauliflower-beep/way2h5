@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>01_新增视频标签</title>
+    <style>
+        /*可以借助css调整视频大小，当然也可以借助video标签自带的属性*/
+        video {
+            /*一般只设定宽，或者按照视频比例设置宽高，不然浏览器会自动在视频上下左右补充边框来达到设定的宽高值*/
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+<!--结合js，可以实现进度条悬停缩略图等效果，借助单个video标签不行-->
+<!--宽高属性比较鸡肋，因为一般会借助css样式来设置视频宽高-->
+    <video src="./小电影.mp4" controls muted loop poster="./封面.png" preload="auto"></video>
+</body>
+</html>
